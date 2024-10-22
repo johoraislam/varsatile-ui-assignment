@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1120px;
+    background-color: black;
+}
+/* nav style start */
+.navbar {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link>ul {
+    display: flex;
+    border: 1px solid #f3eeee59;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 25px;
+}
+
+.nav-link>ul>li {
+    list-style: none;
+    margin-left: 30px;
+    color: #fff;
+}
+
+.btn-primary {
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 6px 10px;
+    color: #fff;
+}
+
+.Fitness {
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.hambergar{
+    display: none;
+    color: wheat;
+    align-items: center;
+}
+
+/* nav style end */
+
+
+
+/* responsive */
+
+@media screen and (max-width:576px){
+    .nav-link{
+        display: none;
+    }
+    .hambergar{
+        display: block;
+    }
+}
