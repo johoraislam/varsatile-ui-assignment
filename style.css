@@ -14,6 +14,7 @@ body {
     max-width: 1120px;
     background-color: black;
 }
+
 /* nav style start */
 .navbar {
     width: 80%;
@@ -41,6 +42,19 @@ body {
     background: rgb(230, 83, 60);
     padding: 6px 10px;
     color: #fff;
+    border: none;
+}
+
+.btn-second {
+    color: white;
+    padding: 8px 6px;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    border-radius: 15px;
+}
+
+.btn {
+    margin-top: 20px;
 }
 
 .Fitness {
@@ -50,23 +64,117 @@ body {
     font-weight: 800;
 }
 
-.hambergar{
+.hambergar {
     display: none;
     color: wheat;
     align-items: center;
 }
 
 /* nav style end */
+.bannar {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.text-banner {
+    width: 50%;
+}
 
+.bannar-img {
+    display: flex;
+    justify-content: flex-end;
+    object-fit: cover;
+    width: 50%;
+}
+
+.bannar-tiile {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.discription {
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-weight: 400;
+    text-align: left;
+}
+
+.dotte {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.curd-text {
+    color: azure;
+}
+
+.curd1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    height: 90px;
+    width: 200px;
+    margin-top: -12%;
+    margin-left: 42%;
+}
+.curd2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    height: 90px;
+    width: 200px;
+    margin-top: -35%;
+    margin-left: 72%;
+}
 
 /* responsive */
 
-@media screen and (max-width:576px){
-    .nav-link{
+@media screen and (max-width:576px) {
+    .nav-link {
         display: none;
     }
-    .hambergar{
+
+    .hambergar {
         display: block;
+    }
+    .bannar{
+        flex-direction: column;
+
+    }
+    .text-banner{
+        width: 100%;
+    }
+    .bannar-img{
+        width: 100%;
+    }
+    .curd1{
+        margin-top: -60%;
+        margin-left: 10%;
+    }
+    .curd2{
+        margin-top: -130%;
+        margin-left: 58%;
     }
 }
