@@ -102,7 +102,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-weight: 400;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .dotte {
@@ -132,6 +132,7 @@ body {
     margin-top: -12%;
     margin-left: 42%;
 }
+
 .curd2 {
     position: absolute;
     display: flex;
@@ -149,6 +150,58 @@ body {
     margin-left: 72%;
 }
 
+/* main style */
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* habbit section style */
+.habbit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.habbit-curds{
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+    margin-top: 20px;
+    
+}
+
+.habbit-title1 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 900;
+    
+}
+
+.habbit-curd>img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.103);
+    padding: 5px;
+}
+.habbit-curd{
+    text-align: center;
+}
+
+
+
+.habbit-title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 /* responsive */
 
 @media screen and (max-width:576px) {
@@ -159,22 +212,31 @@ body {
     .hambergar {
         display: block;
     }
-    .bannar{
+
+    .bannar {
         flex-direction: column;
 
     }
-    .text-banner{
+
+    .text-banner {
         width: 100%;
     }
-    .bannar-img{
+
+    .bannar-img {
         width: 100%;
     }
-    .curd1{
+
+    .curd1 {
         margin-top: -60%;
         margin-left: 10%;
     }
-    .curd2{
+
+    .curd2 {
         margin-top: -130%;
         margin-left: 58%;
+    }
+
+    .habbit-curds{
+        flex-direction: column;
     }
 }
