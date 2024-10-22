@@ -175,7 +175,7 @@ main {
     
 }
 
-.habbit-title1 {
+.habbit-title1,.title {
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 38px;
@@ -200,6 +200,27 @@ main {
     font-family: Inter;
     font-size: 18px;
     font-weight: 600;
+}
+
+/* run an extra mile easily style */
+
+.mile-easily{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 60px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px;
+}
+
+.run-text-container>button{
+    margin-top: 20px;
+}
+
+.run-img-container>img{
+    width: 100%;
+    border-radius: 20px;
 }
 
 /* responsive */
@@ -238,5 +259,12 @@ main {
 
     .habbit-curds{
         flex-direction: column;
+    }
+
+    .mile-easily{
+        flex-direction: column;
+    }
+    .run-text-container>button{
+        width: 100%;
     }
 }
