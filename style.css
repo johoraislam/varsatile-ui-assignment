@@ -153,7 +153,7 @@ body {
 /* main style */
 
 main {
-    width: 80%;
+    /* width: 80%; */
     margin: 20px auto;
 }
 
@@ -161,26 +161,29 @@ main {
 .habbit {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 70px;
 }
 
-.habbit-curds{
+.habbit-curds {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 40px;
     margin-top: 20px;
-    
+
 }
 
-.habbit-title1,.title {
+.habbit-title1,
+.title {
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 38px;
     font-weight: 900;
-    
+
 }
 
 .habbit-curd>img {
@@ -189,7 +192,8 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.103);
     padding: 5px;
 }
-.habbit-curd{
+
+.habbit-curd {
     text-align: center;
 }
 
@@ -204,9 +208,11 @@ main {
 
 /* run an extra mile easily style */
 
-.mile-easily{
+.mile-easily {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
     margin-top: 100px;
     gap: 60px;
     border-radius: 18px;
@@ -214,13 +220,85 @@ main {
     padding: 30px;
 }
 
-.run-text-container>button{
+.run-text-container>button {
     margin-top: 20px;
 }
 
-.run-img-container>img{
+.run-img-container>img {
     width: 100%;
     border-radius: 20px;
+}
+
+/* bmi calculator style */
+
+.bmi-caption {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    color: #fff;
+}
+
+.t-title {
+    margin-bottom: 20px;
+}
+
+tbody>tr,
+th,
+td {
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    padding: 10px;
+
+}
+
+tbody>tr>td {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-title,
+.t-title {
+    color: rgb(255, 255, 255);
+}
+
+.bmi-calcolator-section{
+    background: rgb(34, 34, 34);
+}
+
+.bmi-calculator {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding:20px 0 ;
+    gap: 40px;
+
+}
+
+.bmi-table {
+    width: 48%;
+}
+
+.bmi-input {
+    width: 48%;
+}
+
+input {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.input-btn {
+    margin-top: 30px;
+    padding: 8px 18px;
+}
+
+.dif-input{
+    width: 92%;
 }
 
 /* responsive */
@@ -257,14 +335,27 @@ main {
         margin-left: 58%;
     }
 
-    .habbit-curds{
+    .habbit-curds {
         flex-direction: column;
     }
 
-    .mile-easily{
+    .mile-easily {
         flex-direction: column;
     }
-    .run-text-container>button{
+
+    .run-text-container>button {
         width: 100%;
     }
+
+    .bmi-calculator{
+        flex-direction: column;
+    }
+
+    .bmi-table {
+        width: 100%;
+    }
+    
+    /* .bmi-input {
+        width: 100%;
+    } */
 }
