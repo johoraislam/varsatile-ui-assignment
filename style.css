@@ -146,8 +146,8 @@ body {
     background: rgba(255, 255, 255, 0.1);
     height: 90px;
     width: 200px;
-    margin-top: -35%;
-    margin-left: 72%;
+    margin-top: -50%;
+    margin-left: 77%;
 }
 
 /* main style */
@@ -336,6 +336,32 @@ input {
     padding: 20px;
     border-radius: 20px;
 }
+
+
+/* footer style */
+
+.footer-title{
+ color: #fff;
+}
+
+.footer-container{
+    width: 80%;
+    margin: 50px auto 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer-container>div{
+    width: 32%;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.274);
+    padding: 20px 0;
+}
+
+
+
 /* responsive */
 
 @media screen and (max-width:576px) {
@@ -396,6 +422,14 @@ input {
 
     .identy{
         margin-top: -20%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-container>div{
+        width: 100%;
     }
     
     
